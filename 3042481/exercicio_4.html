@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeira da Jamaica</title>
+</head>
+<body>
+    <canvas id="meuCanvas" style="background-color: gray;"></canvas>
+</body>
+<script>
+    const canvas = document.getElementById('meuCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = 600;
+    canvas.height = 400;
+    
+    ctx.fillStyle = 'green';
+    ctx.fillRect(0, 0, 600, 400);
+
+    ctx.beginPath();                 
+    ctx.moveTo(0, 0);                
+    ctx.lineTo(0, 400);
+    ctx.lineTo(300, 200);              
+    ctx.closePath();                 
+    ctx.fillStyle = 'black';              
+    ctx.fill();
+
+    ctx.beginPath();                 
+    ctx.moveTo(600, 0);                
+    ctx.lineTo(600, 400);
+    ctx.lineTo(300, 200);              
+    ctx.closePath();                 
+    ctx.fillStyle = 'black';              
+    ctx.fill();
+    
+    ctx.strokeStyle = 'yellow';
+    ctx.lineWidth = 55;
+    
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(600, 400);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(600, 0);
+    ctx.lineTo(0, 400);
+    ctx.stroke();
+</script>
+</html>

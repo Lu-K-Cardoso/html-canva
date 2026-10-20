@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeira da Belgica</title>
+</head>
+<body>
+    
+<canvas id="meuCanvas" style="background-color: gray;"></canvas>
+
+</body>
+
+<script>
+    const canvas = document.getElementById('meuCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = 600;
+    canvas.height = 400;
+
+    ctx.fillRect(0, 0, 200, 400);
+    ctx.fillStyle = 'red'; 
+
+    ctx.fillRect(400, 0, 200, 400);
+    ctx.fillStyle = 'yellow'; 
+
+    ctx.fillRect(200, 0, 200, 400);
+    ctx.fillStyle = 'black'; 
+</script>
+
+</html>
