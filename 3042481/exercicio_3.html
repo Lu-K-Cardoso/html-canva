@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafico</title>
+</head>
+<body>
+    <canvas id="meuCanvas" style="background-color: gray;"></canvas>
+</body>
+<script>
+    const canvas = document.getElementById('meuCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = 600;
+    canvas.height = 400;
+    
+    const valores = [50, 150, 100, 300, 200, 400];
+
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = '#02fa02'
+
+    ctx.beginPath();
+
+    const espacamentoX = 120;
+    const margemEsq = 0;
+    const margemInf = 450;
+
+    for(let i = 0; i < valores.length; i++){
+
+        let x = margemEsq + (i * espacamentoX);
+        let y = margemInf - valores[i];
+
+        if(i == 0){
+            ctx.moveTo(x,y);
+        }else{
+            ctx.lineTo(x,y);
+        }
+    }
+    ctx.stroke();
+</script>
+</html>
