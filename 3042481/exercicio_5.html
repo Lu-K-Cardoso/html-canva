@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="meuCanvas" style="background-color: gray;"></canvas>
+</body>
+<script>
+    const canvas = document.getElementById('meuCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = 600;
+    canvas.height = 400;
+
+    ctx.fillStyle = '#87CEEB';
+    ctx.fillRect(0, 0, 600, 400);
+
+    ctx.fillStyle = '#FFD700';
+    ctx.fillRect(470, 30, 60, 60); 
+    
+    ctx.fillStyle = '#4CAF50';
+    ctx.fillRect(0, 340, 600, 60);
+
+    ctx.fillStyle = '#C0C0C0';
+    ctx.beginPath();
+    ctx.moveTo(265, 300);
+    ctx.lineTo(335, 300);   
+    ctx.lineTo(390, 400);
+    ctx.lineTo(210, 400);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.fillStyle = '#F5DEB3';
+    ctx.fillRect(150, 170, 300, 170);
+    
+    ctx.strokeStyle = '#654321';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(150, 170, 300, 170);
+
+    ctx.fillStyle = '#8B4513';
+    ctx.fillRect(380, 75, 35, 75);
+    ctx.strokeRect(380, 75, 35, 75);
+
+    ctx.fillStyle = '#A0522D';
+    ctx.fillRect(375, 70, 45, 12);
+    ctx.strokeRect(375, 70, 45, 12);
+
+    ctx.fillStyle = '#B22222';
+    ctx.beginPath();
+    ctx.moveTo(120, 175);
+    ctx.lineTo(300, 50);
+    ctx.lineTo(480, 175);
+    ctx.closePath();
+    ctx.fill();
+    ctx.strokeStyle = '#654321';
+    ctx.lineWidth = 4;
+    ctx.stroke();
+
+    ctx.fillStyle = '#8B4513';
+    ctx.fillRect(265, 240, 70, 100);
+    ctx.strokeStyle = '#4B2E16';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(265, 240, 70, 100);
+
+    ctx.fillStyle = '#FFD700';
+    ctx.fillRect(320, 285, 7, 7);
+
+    ctx.fillStyle = '#ADD8E6';
+    ctx.fillRect(175, 200, 65, 60);
+    ctx.strokeStyle = '#654321';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(175, 200, 65, 60);
+
+    ctx.beginPath();
+    ctx.moveTo(207, 200);
+    ctx.lineTo(207, 260);
+    ctx.moveTo(175, 230);
+    ctx.lineTo(240, 230);
+    ctx.stroke();
+
+    ctx.fillStyle = '#ADD8E6';
+    ctx.fillRect(360, 200, 65, 60);
+    ctx.strokeRect(360, 200, 65, 60);
+
+    ctx.beginPath();
+    ctx.moveTo(392, 200);
+    ctx.lineTo(392, 260);
+    ctx.moveTo(360, 230);
+    ctx.lineTo(425, 230);
+    ctx.stroke();
+
+    ctx.fillStyle = '#DEB887';
+    ctx.strokeStyle = '#654321';
+    ctx.lineWidth = 2;
+
+    ctx.fillRect(5, 290, 10, 50);
+    ctx.strokeRect(5, 290, 10, 50);
+
+    ctx.fillRect(35, 290, 10, 50);
+    ctx.strokeRect(35, 290, 10, 50);
+
+    ctx.fillRect(65, 290, 10, 50);
+    ctx.strokeRect(65, 290, 10, 50);
+
+    ctx.fillRect(95, 290, 10, 50);
+    ctx.strokeRect(95, 290, 10, 50);
+
+    ctx.fillRect(125, 290, 10, 50);
+    ctx.strokeRect(125, 290, 10, 50);
+
+    ctx.fillRect(0, 300, 150, 8);
+    ctx.strokeRect(0, 300, 150, 8);
+
+    ctx.fillRect(0, 325, 150, 8);
+    ctx.strokeRect(0, 325, 150, 8);
+
+    ctx.fillRect(460, 290, 10, 50);
+    ctx.strokeRect(460, 290, 10, 50);
+
+    ctx.fillRect(485, 290, 10, 50);
+    ctx.strokeRect(485, 290, 10, 50);
+
+    ctx.fillRect(510, 290, 10, 50);
+    ctx.strokeRect(510, 290, 10, 50);
+
+    ctx.fillRect(535, 290, 10, 50);
+    ctx.strokeRect(535, 290, 10, 50);
+
+    ctx.fillRect(560, 290, 10, 50);
+    ctx.strokeRect(560, 290, 10, 50);
+
+    ctx.fillRect(585, 290, 10, 50);
+    ctx.strokeRect(585, 290, 10, 50);
+
+    // Retângulos deitados
+    ctx.fillRect(450, 300, 150, 8);
+    ctx.strokeRect(450, 300, 150, 8);
+
+    ctx.fillRect(450, 325, 150, 8);
+    ctx.strokeRect(450, 325, 150, 8);
+
+
+    
+
+    ctx.fillStyle = '#FFFFFF';
+    ctx.beginPath();
+    ctx.moveTo(40, 70);
+    ctx.lineTo(100, 70);
+    ctx.lineTo(110, 85);
+    ctx.lineTo(30, 85);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(60, 60);
+    ctx.lineTo(85, 60);
+    ctx.lineTo(95, 75);
+    ctx.lineTo(50, 75);
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.strokeStyle = '#654321';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(140, 340);
+    ctx.lineTo(460, 340);
+    ctx.stroke();
+</script>
+</html>
